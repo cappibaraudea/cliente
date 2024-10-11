@@ -1,6 +1,17 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 function Home() {
+  useEffect(() => {
+    const hasReloaded = sessionStorage.getItem("hasReloaded");
+    if (!hasReloaded) {
+      sessionStorage.setItem("hasReloaded", "true");
+      window.location.reload();
+    } else {
+      sessionStorage.removeItem("hasReloaded");
+    }
+  }, []);
+
   return (
     <div className="bg-white w-full min-h-screen flex justify-center items-center">
       <div
