@@ -19,30 +19,30 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/login",
+    path: "/cliente/login",
     element: <Login />,
   },
   {
-    path: "/register",
+    path: "/cliente/register",
     element: <Register />,
   },
   {
     element: <ProtectedRoutes />,
     children: [
       {
-        path: "/posts",
+        path: "/cliente/posts",
         element: <Tasks />,
       },
       {
-        path: "/taskForm/:id",
+        path: "/cliente/taskForm/:id",
         element: <TaskForm />,
       },
       {
-        path: "/add-task",
+        path: "/cliente/add-task",
         element: <TaskForm />,
       },
       {
-        path: "/feed",
+        path: "/cliente/feed",
         element: <Feed />,
       },
     ],
