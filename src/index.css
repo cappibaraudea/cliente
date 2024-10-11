@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "klik";
+  src: url("assets/fonts/Klik-Light.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "folks";
+  src: url("assets/fonts/Folks-Bold.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.border-gradient {
+  position: relative;
+  display: inline-block;
+  padding: 2px;
+  border-radius: 1rem;
+  background: linear-gradient(90deg, #ffff3f, #25a53e);
+  background-clip: padding-box;
+  overflow: hidden;
+  @apply w-fit;
+  @apply mx-auto;
+}
+
+.border-gradient::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  background: transparent;
+  z-index: -1;
+}
+
+.border-gradient button {
+  position: relative;
+  background: #47b53e;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  z-index: 1;
+  border-radius: inherit;
+}
+
+.border-gradient-2 {
+  position: relative;
+  display: inline-block;
+  padding: 3px;
+  border-radius: 1rem;
+  background: linear-gradient(90deg, #ffff3f, #25a53e);
+  background-clip: padding-box;
+  overflow: hidden;
+  @apply w-fit;
+  @apply mx-auto;
+}
+
+.border-gradient-2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  background: transparent;
+  z-index: -1;
+}
+
+.border-gradient-2 button {
+  position: relative;
+  background: #fff;
+  border: none;
+  color: black;
+  padding: 0.5rem 1rem;
+  z-index: 1;
+  border-radius: 1rem;
+}
+
+.border-gradient-3 {
+  position: relative;
+  display: inline-block;
+  padding: 1px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #ffea00, #ff9021);
+  background-clip: padding-box;
+  overflow: hidden;
+  @apply w-full;
+  @apply mx-auto;
+}
+
+.border-gradient-3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  background: transparent;
+  z-index: -1;
+}
+
+.border-gradient-3 button {
+  position: relative;
+  background: #fff;
+  color: #a9a9a9;
+  padding: 3px;
+  padding-left: 15px;
+  z-index: 1;
+  border-radius: inherit;
+}
