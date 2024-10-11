@@ -25,7 +25,7 @@ const Tasks = () => {
       </section>
       <button
         className="bg-green-700 text-white font-bold rounded-md p-2 w-fit mx-auto mt-12"
-        onClick={() => navigate("/add-task")}
+        onClick={() => navigate("/cliente/add-task")}
       >
         Agregar tarea
       </button>

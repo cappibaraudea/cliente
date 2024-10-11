@@ -57,16 +57,16 @@ export const TaskForm = () => {
     // values.date = dateValue;
     if (id) {
       await editTaskFunction(id, values);
-      navigate("/feed");
+      navigate("/cliente/feed");
       return;
     }
 
     await newTaskFunction(values);
-    navigate("/feed");
+    navigate("/cliente/feed");
   };
 
   if (isLoading == false && user.id !== taskUserId && taskUserId !== "") {
-    return <Navigate to={"/feed"} replace />;
+    return <Navigate to={"/cliente/feed"} replace />;
   }
 
   return (

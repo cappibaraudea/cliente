@@ -17,7 +17,7 @@ function Home() {
           className="object-contain w-60"
         />
         <div className="border-gradient-2">
-          <Link to="/login">
+          <Link to="/cliente/login">
             <button className="relative font-sans text-2xl w-60 mx-auto font-extralight">
               Empieza ahora
             </button>

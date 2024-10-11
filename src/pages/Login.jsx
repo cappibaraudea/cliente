@@ -22,10 +22,11 @@ function Login() {
   };
 
   useEffect(() => {
-    if (isAuth) navigate(`/feed`, { replace: true });
+    if (isAuth) navigate(`/cliente/feed`, { replace: true });
   }, [isAuth]);
 
-  if (isAuth && isLoading == false) return <Navigate to={"/feed"} replace />;
+  if (isAuth && isLoading == false)
+    return <Navigate to={"/cliente/feed"} replace />;
 
   return (
     <article className="bg-white w-full min-h-screen flex justify-center">
@@ -99,7 +100,7 @@ function Login() {
 
         <span className="mx-auto mt-4">
           ¿No tienes una cuenta?
-          <Link to={"/register"} className="underline ml-2">
+          <Link to={"/cliente/register"} className="underline ml-2">
             Regístrate
           </Link>
         </span>

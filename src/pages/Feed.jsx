@@ -30,7 +30,7 @@ const Feed = () => {
 
   const logOut = () => {
     closeSession();
-    navigate("/");
+    navigate("/cliente");
   };
 
   const handleDeleteTask = async (taskId) => {
@@ -86,7 +86,7 @@ const Feed = () => {
           <Link to={"/add-task"} className="border-gradient-3">
             <button
               className="font-sans w-full text-sm font-light text-left"
-              to={"/login"}
+              to={"/cliente/login"}
             >
               <p>Publica tu parche...</p>
             </button>

@@ -6,7 +6,8 @@ const ProtectedRoutes = () => {
 
   if (isLoading) return <p className="text-xl">Loading...</p>;
 
-  if (!isAuth && isLoading === false) return <Navigate to={"/"} replace />;
+  if (!isAuth && isLoading === false)
+    return <Navigate to={"/cliente/"} replace />;
 
   return (
     <>
