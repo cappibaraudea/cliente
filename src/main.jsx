@@ -15,7 +15,7 @@ import Feed from "./pages/Feed.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/cliente",
     element: <Home />,
   },
   {

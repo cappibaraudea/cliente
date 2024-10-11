@@ -12,7 +12,7 @@ function Home() {
       >
         <h1 className="font-logo text-white text-6xl">Cappibara</h1>
         <img
-          src="/cappibara.gif"
+          src="cappibara.gif"
           alt="Cappibara"
           className="object-contain w-60"
         />
