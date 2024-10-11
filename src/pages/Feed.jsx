@@ -83,7 +83,7 @@ const Feed = () => {
           <span className="bg-gradient-to-r from-yellow-400 to-orange-400 h-[2.5px]"></span>
         </div>
         <div className="px-4 my-4">
-          <Link to={"/add-task"} className="border-gradient-3">
+          <Link to={"/cliente/add-task"} className="border-gradient-3">
             <button
               className="font-sans w-full text-sm font-light text-left"
               to={"/cliente/login"}
